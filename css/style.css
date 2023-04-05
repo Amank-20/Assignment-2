@@ -1,0 +1,97 @@
+body{
+    color:white;
+}
+h1{
+    color:black;
+    text-shadow: 4px 4px 4px skyblue;
+    margin-right: 150px;
+}
+.text{
+    position:relative;
+    margin-right:100px;
+    margin-bottom: 200px;
+}
+.pwd{
+    color:black;
+    float:left;
+}
+input[type="form-text"]{
+    border:none;
+    border-bottom:1px dotted black;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('assets/user-icon.jpg');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+  }
+
+input[type="form-password"]{
+    border:none;
+    border-bottom:1px dotted black;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('assets/lock-icon.jpg');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+  }
+
+
+button[type="Button"]{
+    width: 10em;
+    height: 20px;
+    color:white;
+    z-index:-1;
+    text-align: center;
+    background-color:rgb(135, 235, 227);
+    border: none;
+    border-radius: 10px;
+    float:right;
+   
+}
+.split{
+    height:100%;
+    width:50%;
+    position:fixed;
+    z-index: 1;
+    top:0;
+}
+.left{
+    left:0;
+}
+.right{
+    right:0;
+    background-image: linear-gradient(to top right,rgba(40, 74, 138, 0.897),rgb(97, 59, 97));
+}
+.centered{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.hexagon-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    gap: 10px; 
+  }
+  
+  .hexagon-row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hexagon {
+    width: 150px;
+    height: 150px; 
+    background-color: #FFA07A;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); 
+    border: 1px solid white;
+  }
